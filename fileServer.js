@@ -644,6 +644,7 @@ app.post("/check-fourth-last-char", (req, res) => {
   });
 });
 app.post("/update-user-field", (req, res) => {
+  console.log("update-user-field 시작됨");
   const { filePath, idField, id, field, newValue } = req.body;
   const absolutePath = path.resolve(__dirname, filePath);
 

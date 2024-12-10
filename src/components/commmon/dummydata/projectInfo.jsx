@@ -163,30 +163,13 @@ export const projectInfo = [
     usedLanguage: "Java",
     category: "백엔드",
     hits: 33,
-    likes: [7],
-    contacts: ["admin1", "admin4"],
-    comments: [],
-  },
-{
-      projectId: 9,
-      projectTemplate: 2,
-      projectTitle: "낭", 
-      projectOwnerName: "f",
-      description: "낭",
-      startDate: "2024-12-04", 
-      endDate: "2024-12-31", 
-      category: "ㄷㅎㄴ", 
-      usedLanguage: "안", 
-      projectLink: "http",
-      solving: "ㅇㅎㅈㄷㅎㅁㄴ", 
-      challenge: "ㅎ마ㅣㅇ롷맨ㅅ;",
-      video: " ",
-      coverImage: "uploads/sssss.jpg", 
-      images: ["uploads/ddddd.jpg","uploads/dugi.jpg"], 
-      logo: "uploads/kkkkk.jpg", 
-      share: false,
-
-      ownerId: "te4939",
-      ownerEmail: "teeeg@nabet"
+    likes: [
+      7
+    ],
+    contacts: [
+      "admin1",
+      "admin4"
+    ],
+    comments: []
   },
 ];

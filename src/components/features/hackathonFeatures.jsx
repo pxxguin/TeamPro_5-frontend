@@ -125,39 +125,38 @@ export const updateHackathon = async (hackId, field, newValue) => {
     return;
   }
 
-  try {
-    // maxMemNumber는 숫자형이어야 하므로 이를 숫자형으로 변환
-    if (field === "maxMemNumber") {
-      newValue = Number(newValue); // 숫자로 변환
-    }
+    try {
+        // maxMemNumber는 숫자형이어야 하므로 이를 숫자형으로 변환
+        if (field === "maxMemNumber") {
+            newValue = Number(newValue); // 숫자로 변환
+        }
 
-    const filePath = "src/components/commmon/dummydata/hackathonInfo.jsx";
+        const filePath = "src/components/commmon/dummydata/hackathonInfo.jsx";
+        
+        // 필드를 업데이트하는 API 호출
+        await fetch('http://localhost:3000/update-user-field', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                filePath,
+                idField,
+                id: Number(hackId),
+                field,
+                newValue
+            }),
+        });
 
-    // 필드를 업데이트하는 API 호출
-    await fetch("http://localhost:3000/update-field", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        filePath,
-        idField,
-        id: Number(hackId),
-        field,
-        newValue,
-      }),
-    });
-
-    // Map 객체도 업데이트
-    if (hackathon) {
-      hackathon[field] = newValue;
-      oriHackathons.set(hackId, hackathon);
-    }
-
-    console.log(`${field} 필드가 성공적으로 업데이트되었습니다.`);
-  } catch (error) {
-    console.error("필드 업데이트 중 오류가 발생했습니다:", error);
-  }
+        // Map 객체도 업데이트
+        if(hackathon){
+        hackathon[field] = newValue;
+        oriHackathons.set(hackId, hackathon);
+        }
+        
+        console.log(`${field} 필드가 성공적으로 업데이트되었습니다.`);
+    } catch (error) {
+        console.error('필드 업데이트 중 오류가 발생했습니다:', error);
 };
 
 export const deleteHackathon = async (hackId) => {
