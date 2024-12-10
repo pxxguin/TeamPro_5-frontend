@@ -18,16 +18,18 @@ const MyPageSection = ({
   onSort,
   userId,
   userEmail,
+  userNickname,
 }) => {
   const navigate = useNavigate();
 
   const handleCreatePortfolioClick = () => {
-    console.log(userEmail);
-    if (!userEmail) {
-      alert("이메일과 닉네임을 등록해 주세요.");
-    } else if (userEmail && buttonKey == "프로젝트") {
-      navigate("/CreatePortfolioPage");
-    } else if (userEmail && buttonKey == "해커톤") {
+    if (buttonKey == "프로젝트") {
+      if (!userEmail || !userNickname) {
+        alert("이메일과 닉네임을 등록해 주세요");
+      } else {
+        navigate("/CreatePortfolioPage");
+      }
+    } else if (buttonKey == "해커톤") {
       navigate("/CreateHackathonPage");
     } else {
       navigate("/MergerCreatePortfolioPage");

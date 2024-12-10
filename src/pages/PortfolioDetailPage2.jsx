@@ -330,11 +330,21 @@ const PortfolioDetailPage2 = () => {
             <LearnedWrapper>
               <LearnedText>배운점</LearnedText>
               <Image5 src={Notepad5} alt="Notepad5" />
+              <TextBox>
+              {portfolioData.challenge
+                ? portfolioData.challenge
+                : "배운점 없음."}
+            </TextBox>
             </LearnedWrapper>
             {/* 문제설명 */}
             <ProblemWrapper>
               <ProblemText>해결한 점</ProblemText>
               <Image5 src={Notepad5} alt="Notepad5" />
+              <TextBox>
+              {portfolioData.solving
+                ? portfolioData.solving
+                : "문제 해결 내용 없음."}
+            </TextBox>
             </ProblemWrapper>
           </Wrapper2>
         </Maincomponent>
@@ -801,4 +811,11 @@ const ModalContainer = styled.div`
   button:hover {
     background: #0056b3;
   }
+`;
+
+const TextBox = styled.div`
+  background-color: white;
+  padding: 0.4vw;
+  // border: 1px solid #ccc;
+  border-radius: 4px;
 `;

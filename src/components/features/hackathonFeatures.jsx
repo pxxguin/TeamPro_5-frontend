@@ -74,7 +74,7 @@ export const updateHackathon = async (hackId, field, newValue) => {
         const filePath = "src/components/commmon/dummydata/hackathonInfo.jsx";
         
         // 필드를 업데이트하는 API 호출
-        await fetch('http://localhost:3000/update-field', {
+        await fetch('http://localhost:3000/update-user-field', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

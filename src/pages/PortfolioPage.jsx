@@ -74,13 +74,13 @@ const PortfolioPage = () => {
 
   const handleCreatePortfolioClick = () => {
     console.log(currentUser);
-    if (!currentUser?.email) {
-      alert("이메일을 등록해 주세요.");
+    if (!currentUser?.email || !currentUser?.nickname) {
+      alert("이메일과 닉네임을 등록해 주세요.");
     } else {
       navigate("/CreatePortfolioPage");
     }
   };
-  
+
   return (
     <TemplatePageContainer className="TemplatePageContainer">
       <PageHeader
