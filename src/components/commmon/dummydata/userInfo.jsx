@@ -310,10 +310,10 @@ export const userInfo = [
       phoneNumber: "010-6203-5712",
       birthday: "2024-12-09",
       recruiter: false,
-      email: "",
+      email: "suyeonsy@naver.com",
       nickname: "두리안",
       link: "",
       career: "없음",
       education: ""
-    }
+    },
 ];

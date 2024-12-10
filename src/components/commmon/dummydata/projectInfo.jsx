@@ -194,5 +194,5 @@ export const projectInfo = [
       "admin4"
     ],
     comments: []
-  }
+  },
 ];
