@@ -2,8 +2,7 @@ export const userInfo = [
   {
     id: "admin1",
     pageId: 1,
-    password:
-      "00c77cb341864225b3ec7e8e84b6e9736b1bcbe037b2bfe7c91a222ceae7e5e7",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "김예은",
     phoneNumber: "010-2222-2222",
     birthday: "1990-01-01",
@@ -18,8 +17,7 @@ export const userInfo = [
   {
     id: "happytree12",
     pageId: 2,
-    password:
-      "5b8069e24fe855f37748c48a92c60820ef05844c5e2766c59b08b574d9f20a13",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "김태연",
     phoneNumber: "010-1234-5678",
     birthday: "1990-01-01",
@@ -34,8 +32,7 @@ export const userInfo = [
   {
     id: "backenddevel1",
     pageId: 3,
-    password:
-      "5b8069e24fe855f37748c48a92c60820ef05844c5e2766c59b08b574d9f20a13",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "조수연",
     phoneNumber: "010-6203-5717",
     birthday: "1990-01-01",
@@ -50,8 +47,7 @@ export const userInfo = [
   {
     id: "admin4",
     pageId: 4,
-    password:
-      "a8798ceb4a553fa45e3a5fd1d14d5e916c0c6568a50b9d8843cadd0be83e5b03",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "최현혜",
     phoneNumber: "010-1234-5678",
     birthday: "1990-01-01",
@@ -66,8 +62,7 @@ export const userInfo = [
   {
     id: "5",
     pageId: 5,
-    password:
-      "5b8069e24fe855f37748c48a92c60820ef05844c5e2766c59b08b574d9f20a13",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "홍길동",
     phoneNumber: "010-1234-5678",
     birthday: "1990-01-01",
@@ -81,8 +76,7 @@ export const userInfo = [
   {
     id: "6",
     pageId: 6,
-    password:
-      "5b8069e24fe855f37748c48a92c60820ef05844c5e2766c59b08b574d9f20a13",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "홍길동",
     phoneNumber: "010-1234-5678",
     birthday: "1990-01-01",
@@ -96,8 +90,7 @@ export const userInfo = [
   {
     id: "7",
     pageId: 7,
-    password:
-      "5b8069e24fe855f37748c48a92c60820ef05844c5e2766c59b08b574d9f20a13",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "홍길동",
     phoneNumber: "010-1234-5678",
     birthday: "1990-01-01",
@@ -111,8 +104,7 @@ export const userInfo = [
   {
     id: "user100000",
     pageId: 8,
-    password:
-      "56485af404bb00997ea480c40ad496ca4aa4517af82f203a90cae82d70ac0bb0",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "프레",
     phoneNumber: "010-2222-3333",
     birthday: "2024-11-06",
@@ -126,8 +118,7 @@ export const userInfo = [
   {
     id: "removefromfile",
     pageId: 9,
-    password:
-      "9ce94b3117730e3c60fbbae99ca251b0c5ce753ea56513aa094bd240b3a27c33",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "삭제오류잡자",
     phoneNumber: "010-4343-4343",
     birthday: "2024-10-31",
@@ -141,8 +132,7 @@ export const userInfo = [
   {
     id: "cleansaveinfo",
     pageId: 10,
-    password:
-      "34e9b33aedfbe21b0b48f113217aaa30d0d23a797829010de7e055094f28bdb1",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "깔끔하게",
     phoneNumber: "010-2222-3344",
     birthday: "2024-11-04",
@@ -156,8 +146,7 @@ export const userInfo = [
   {
     id: "world443322",
     pageId: 11,
-    password:
-      "56485af404bb00997ea480c40ad496ca4aa4517af82f203a90cae82d70ac0bb0",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "제발요",
     phoneNumber: "010-3343-4343",
     birthday: "2024-11-04",
@@ -171,8 +160,7 @@ export const userInfo = [
   {
     id: "okaykimofyou",
     pageId: 12,
-    password:
-      "56485af404bb00997ea480c40ad496ca4aa4517af82f203a90cae82d70ac0bb0",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "강경",
     phoneNumber: "010-4343-4444",
     birthday: "2024-05-22",
@@ -186,8 +174,7 @@ export const userInfo = [
   {
     id: "my._.movie_lover",
     pageId: 13,
-    password:
-      "b45a20ddaf1014b1407724fd77f1e9ddb2b0b9338f1b7541a7e2e81a24843532",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "영화",
     phoneNumber: "010-1112-2233",
     birthday: "2024-11-07",
@@ -201,8 +188,7 @@ export const userInfo = [
   {
     id: "whyisntwork",
     pageId: 14,
-    password:
-      "e23ac49f1f9994af45229a0d00f1c14d34f24c3798d2bcd6baaec01c1b018403",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "외않되",
     phoneNumber: "010-4343-4300",
     birthday: "2024-11-18",
@@ -216,8 +202,7 @@ export const userInfo = [
   {
     id: "feelingsogood",
     pageId: 15,
-    password:
-      "56485af404bb00997ea480c40ad496ca4aa4517af82f203a90cae82d70ac0bb0",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "도파민터짐",
     phoneNumber: "010-3423-4324",
     birthday: "2024-11-04",
@@ -231,8 +216,7 @@ export const userInfo = [
   {
     id: "angel1234567",
     pageId: 16,
-    password:
-      "56485af404bb00997ea480c40ad496ca4aa4517af82f203a90cae82d70ac0bb0",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "윤미영",
     phoneNumber: "010-2323-2323",
     birthday: "2010-06-09",
@@ -246,8 +230,7 @@ export const userInfo = [
   {
     id: "june_youall",
     pageId: 18,
-    password:
-      "a8798ceb4a553fa45e3a5fd1d14d5e916c0c6568a50b9d8843cadd0be83e5b03",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "유월",
     phoneNumber: "010-9823-4143",
     birthday: "2024-11-06",
@@ -261,8 +244,7 @@ export const userInfo = [
   {
     id: "o._d6u2v_c29ecefcz1q",
     pageId: 19,
-    password:
-      "a8798ceb4a553fa45e3a5fd1d14d5e916c0c6568a50b9d8843cadd0be83e5b03",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "hashemail",
     phoneNumber: "010-2414-1354",
     birthday: "2024-11-03",
@@ -276,8 +258,7 @@ export const userInfo = [
   {
     id: "q.4q1dbf",
     pageId: 20,
-    password:
-      "a8798ceb4a553fa45e3a5fd1d14d5e916c0c6568a50b9d8843cadd0be83e5b03",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "입력",
     phoneNumber: "010-8291-3478",
     birthday: "2024-11-03",
@@ -291,7 +272,7 @@ export const userInfo = [
   {
     id: "suyeonnie",
     pageId: 21,
-    password: "close",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "테스트",
     phoneNumber: "010-9876-5432",
     birthday: "undefined-undefined-undefined",
@@ -305,8 +286,7 @@ export const userInfo = [
   {
     id: "suyeonnie2",
     pageId: 28,
-    password:
-      "ff7d22ed655ae8ce05119d723e5de80ca8b0287d5fae6c2dce8aec5e54d4d8bf",
+    password: "REPLACE_WITH_SECURE_PASSWORD",
     name: "조수연",
     phoneNumber: "010-6203-5712",
     birthday: "2024-12-09",

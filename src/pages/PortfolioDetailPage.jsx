@@ -183,7 +183,7 @@ const PortfolioDetailPage = () => {
           <Logo>
               {portfolioData.logo ? (
                 <img
-                  src={`http://localhost:3000/${portfolioData.logo}`}
+                  src={sanitizeUrl(`http://localhost:3000/${portfolioData.logo}`)}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -297,7 +297,7 @@ const PortfolioDetailPage = () => {
                     portfolioData.images.slice(0, 4).map((image, index) => (
                       <ImageBox key={index}>
                         <img
-                          src={`http://localhost:3000/${image}`}
+                          src={sanitizeUrl(`http://localhost:3000/${image}`)}
                           alt={`프로젝트 이미지 ${index + 1}`}
                           style={{
                             width: "100%",
@@ -725,3 +725,13 @@ const SubmitButton = styled.button`
     font-size: 0.8125em;
   }
 `;
+
+function sanitizeUrl(url) {
+  // Basic URL validation to prevent XSS
+  try {
+    const parsedUrl = new URL(url);
+    return parsedUrl.href;
+  } catch (e) {
+    return 'about:blank'; // Fallback to a safe URL
+  }
+}

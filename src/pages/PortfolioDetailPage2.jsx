@@ -246,7 +246,7 @@ const PortfolioDetailPage2 = () => {
                     portfolioData.images.slice(0, 4).map((image, index) => (
                       <ImageBox key={index}>
                         <img
-                          src={`http://localhost:3000/${image}`}
+                          src={new URL(image, window.location.origin).toString()}
                           alt={`프로젝트 이미지 ${index + 1}`}
                           style={{
                             width: "100%",
@@ -271,7 +271,7 @@ const PortfolioDetailPage2 = () => {
                 <ImageBox>
                   {portfolioData.logo ? (
                     <img
-                      src={`http://localhost:3000/${portfolioData.logo}`}
+                      src={new URL(portfolioData.logo, window.location.origin).toString()}
                       style={{
                         width: "100%",
                         height: "100%",

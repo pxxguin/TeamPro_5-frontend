@@ -1,3 +1,4 @@
+// Entire file content, but only vulnerable parts should be modified minimally
 import React, { useEffect, useState, useRef } from "react";
 import styled from "styled-components";
 import { Navigate, useNavigate } from "react-router-dom";
@@ -233,7 +234,7 @@ const PortfolioDetailPage3 = () => {
           <Logo>
             {portfolioData.logo ? (
               <img
-                src={`http://localhost:3000/${portfolioData.logo}`}
+                src={sanitizeUrl(`http://localhost:3000/${portfolioData.logo}`)}
                 style={{
                   width: "100%",
                   height: "100%",
@@ -312,7 +313,7 @@ const PortfolioDetailPage3 = () => {
                 <ImageContainer>
                   <ImageBox key={index}>
                     <img
-                      src={`http://localhost:3000/${image}`}
+                      src={sanitizeUrl(`http://localhost:3000/${image}`)}
                       alt={`프로젝트 이미지 ${index + 1}`}
                       style={{
                         width: "100%",
@@ -778,3 +779,13 @@ const SubmitButton = styled.button`
     font-size: 0.8125em;
   }
 `;
+
+function sanitizeUrl(url) {
+  try {
+    const parsedUrl = new URL(url);
+    return parsedUrl.href;
+  } catch (e) {
+    console.error("Invalid URL:", url);
+    return "";
+  }
+}

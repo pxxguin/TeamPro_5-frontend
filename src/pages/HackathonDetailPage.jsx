@@ -212,7 +212,7 @@ const HackathonDetailPage = () => {
                   }}
                 >
                   <img
-                    src={`http://localhost:3000/${image}`}
+                    src={sanitizeURL(`http://localhost:3000/${image}`)}
                     alt={`프로젝트 이미지 ${index + 1}`}
                     style={{
                       width: "100%",
@@ -258,7 +258,7 @@ const HackathonDetailPage = () => {
             <ImageWrapper>
                {HackathonData.coverImage ? (
             <img
-              src={`http://localhost:3000/${HackathonData.coverImage}`}
+              src={sanitizeURL(`http://localhost:3000/${HackathonData.coverImage}`)}
               style={{
                 width: "100px",
                 height: "100px",
@@ -300,7 +300,7 @@ const HackathonDetailPage = () => {
         <Logo>
           {HackathonData.logo ? (
             <img
-             src={`http://localhost:3000/${HackathonData.logo}`}
+             src={sanitizeURL(`http://localhost:3000/${HackathonData.logo}`)}
              style={{
              width: "100%",
              height: "100%",
@@ -821,3 +821,13 @@ const VideoWrappeer = styled.div`
     text-indent: 1em;
   }
 `;
+
+function sanitizeURL(url) {
+  try {
+    const parsedURL = new URL(url);
+    return parsedURL.href;
+  } catch (e) {
+    console.error("Invalid URL:", url);
+    return "";
+  }
+}
